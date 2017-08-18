@@ -7,8 +7,11 @@ object HelloWorld {
     printf("HelloWorld Scala! 111")
     println("HelloWorld Scala! 222")
 
-//    showClosure
-    defaultParameters()
+    //    showClosure
+    //    defaultParameters()
+//    iter
+    iterWithIf
+
   }
 
   def showUsageOfVariables(): Unit = {
@@ -31,10 +34,24 @@ object HelloWorld {
     println("multiplier(3): " + multiplier(3))
   }
 
-  def defaultParameters(a:Int = 5, b:Int=7): Unit = {
+  def defaultParameters(a: Int = 5, b: Int = 7): Unit = {
     println("a: " + a)
     println("b: " + b)
-    println("a+b: " + (a+b))
+    println("a+b: " + (a + b))
+  }
+
+  def iter: Unit = {
+    for (i <- 1 to 10) {
+      println(i)
+    }
+  }
+
+  def iterWithIf: Unit = {
+    for (i <- 1 to 10
+         if i != 2; if i != 3
+    ) {
+      println(i)
+    }
   }
 
 }

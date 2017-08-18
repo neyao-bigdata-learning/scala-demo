@@ -9,8 +9,10 @@ class ScalaCollections {
     }
   }
 
-//  def list: Unit {
-//    var list: List[String] = List ("aa", "bb", "cc")
-//  }
+  def list: Unit = {
+    val numbers = List(1, 2, 3, 4)  // 使用val的话，之后就不能再对这个变量赋值了
+    var numbers1 = List(1, 2, 3, 4)
+
+  }
 
 }
